@@ -42,7 +42,7 @@ public class Tienda {
         if(Utilitarios.validarCampoDouble(precioProducto)){
             producto.setPrecio(precioProducto);
         }else{
-            Utilitarios.mostrarmensaje("El valor del producto no puede ser cero: ");
+            Utilitarios.mostrarmensaje("El valor del producto no puede ser menor a cero: ");
             return;
         }
 
