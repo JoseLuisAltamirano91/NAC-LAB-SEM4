@@ -1,0 +1,4 @@
+*****REPORTE DE PRODUCTOS*****----------------------------------------------------------------------------------
+Codigo	Nombre	Cantidad	Precio	Categoria
+poo1	asd	2	90.0	1
+poo2	produc	4	98.0	2
