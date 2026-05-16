@@ -36,7 +36,8 @@ public class Main {
                     tienda.cargarArchivoBinario();
                     break;
                 case 5:
-                    tienda.CalcularTotalStock();
+                    int total = tienda.CalcularTotalStock(0);
+                    Utilitarios.mostrarmensaje("Total stock: " + total);
                     break;
                 case 6:
                     tienda.venderProducto();

@@ -158,12 +158,12 @@ public class Tienda {
         );
     }
 
-    public void CalcularTotalStock(){
-        int cantidadStock = 0;
-        for (int i = 0; i < lproductos.size(); i++) {
-            cantidadStock += lproductos.get(i).getCantidad();
+
+    public int CalcularTotalStock(int indice) {
+        if (indice == lproductos.size()) {
+            return 0;
         }
-        Utilitarios.mostrarmensaje("Total stock: " + cantidadStock);
+        return lproductos.get(indice).getCantidad() + CalcularTotalStock(indice + 1);
     }
 
 
